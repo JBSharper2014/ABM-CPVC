@@ -1,0 +1,6 @@
+10 / 10 / 2019
+18:47
+
+-Finalicé Confirmacion del cobro.
+-Agregué las librerias F# restantes.
+-Opté por no implementar asincronicidad tampoco en cobros por el momento.

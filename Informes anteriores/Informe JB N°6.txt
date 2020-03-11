@@ -1,0 +1,12 @@
+15:10 del 3/10/2019
+
+1-Terminadas devoluciones
+2-Intento fallido de implementar la clase ExecuteQuerys como asyncrona.
+	Motivos:
+		A-Dificultad para dar soporte a enorme cantidad de métodos que ya la utilizan
+		B-Aparentemente es mejor la utilizacion de multithreads en vez de asincronicidad para trabajar con bases de datos
+		C-Fallos en la logica de programacion: si se pretende inicializar una variable con el resultado de un metodo asincrono, el programa tenderá a fallar
+		El motivo de esto es que la inicializacion está en una pila de tareas (un task) y la llamada al metodo asincrono se ejecuta en otra.
+
+Conclusion: Voy a postergar las pruebas a los sistemas de Cobros y Pagos donde le voy a dar otra implementacion distinta a ExecuteQuery que no tenga ningun acoplamiento
+con el sistema de ventas.

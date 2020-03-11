@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaUsuario", "CapaUsuario\CapaUsuario.csproj", "{A944BDF9-4A0B-4937-938C-633042D9B0B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{D41ADDE8-F9FA-425B-BAD7-C93EE070CBBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FAD2C821-17C1-4234-BF11-03B2AD133DAB}"
+	ProjectSection(SolutionItems) = preProject
+		Informe semanal.txt = Informe semanal.txt
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Templates", "Templates\Templates.fsproj", "{B2F8D34B-46AD-42A3-A58A-F1D270A8BE82}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatosVentas", "DatosVentas\DatosVentas.fsproj", "{DBA86784-7E54-4900-9F9C-03ABAF852357}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatosPagos", "DatosPagos\DatosPagos.fsproj", "{E979F97C-A74A-4D9E-B014-29EB76C4C434}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DatosCobros", "DatosCobros\DatosCobros.fsproj", "{7A076B0B-AA6D-4E5B-974B-2B47BF59805E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A944BDF9-4A0B-4937-938C-633042D9B0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A944BDF9-4A0B-4937-938C-633042D9B0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A944BDF9-4A0B-4937-938C-633042D9B0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A944BDF9-4A0B-4937-938C-633042D9B0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41ADDE8-F9FA-425B-BAD7-C93EE070CBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41ADDE8-F9FA-425B-BAD7-C93EE070CBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41ADDE8-F9FA-425B-BAD7-C93EE070CBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41ADDE8-F9FA-425B-BAD7-C93EE070CBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F8D34B-46AD-42A3-A58A-F1D270A8BE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F8D34B-46AD-42A3-A58A-F1D270A8BE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F8D34B-46AD-42A3-A58A-F1D270A8BE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F8D34B-46AD-42A3-A58A-F1D270A8BE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA86784-7E54-4900-9F9C-03ABAF852357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA86784-7E54-4900-9F9C-03ABAF852357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA86784-7E54-4900-9F9C-03ABAF852357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA86784-7E54-4900-9F9C-03ABAF852357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E979F97C-A74A-4D9E-B014-29EB76C4C434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E979F97C-A74A-4D9E-B014-29EB76C4C434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E979F97C-A74A-4D9E-B014-29EB76C4C434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E979F97C-A74A-4D9E-B014-29EB76C4C434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A076B0B-AA6D-4E5B-974B-2B47BF59805E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A076B0B-AA6D-4E5B-974B-2B47BF59805E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A076B0B-AA6D-4E5B-974B-2B47BF59805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A076B0B-AA6D-4E5B-974B-2B47BF59805E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {470C7FAB-508D-477F-B7BC-2838E32AADBC}
+	EndGlobalSection
+EndGlobal

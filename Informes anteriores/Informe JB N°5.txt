@@ -1,0 +1,22 @@
+22:52 del 28 del 9 de 2019
+
+1-Terminadas las funcionalidades de factura y remito por venta.
+
+NOTAS:
+
+Tuve que añadir botones para ver las observaciones. los mismos llenan el textbox de observaciones. de otra forma es imposible leer en la celdas.
+
+Para remitos:
+
+ tuve que añadir el campo "cantidad" en la tabla devolucion, ya que al dar el alta un remito, se descuenta la cantidad del pedido
+de venta o devolucion del stock por cada producto. aunque remarco una devolucion solo puede ser por UN PRODUCTO esto quiere decir un CODIGO
+de producto, pueden ser muchas unidades del mismo.
+
+Para facturas: Eliminé la posibilidad de modificar la observación ya que es trabajo sin sentido. Si ves que hay otras entidades que solo modifican
+este campo, también descartalas. Si modifican varios entonces se mantiene.
+
+-------------
+Por otro lado, arreglé todos los bugs anteriores
+
+ 1-Condicion defectuosa al listar precios con null en pedido de venta
+ 2-Control que listaba clientes en pedido de venta no funcionaba

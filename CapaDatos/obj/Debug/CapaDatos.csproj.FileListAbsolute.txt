@@ -1,0 +1,9 @@
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\bin\Debug\CapaDatos.dll
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\obj\Debug\CapaDatos.Properties.Resources.resources
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\obj\Debug\CapaDatos.csproj.GenerateResource.cache
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\obj\Debug\CapaDatos.dll
+C:\IntMain{}\Analista de sistemas\3er año\Sistemas II\Programa\CapaDatos\obj\Debug\CapaDatos.pdb

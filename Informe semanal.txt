@@ -1,0 +1,71 @@
+***************( Sistema de compras, ventas, pagos y cobros. )**************
+
+********************( Fecha de redaccion: 7/11/2019 )********************
+
+--->Se completo en la semana:
+
+
+
+(ahora a partir de la refactorización violenta que comenzó la semana del 12/08 si no me equivoco)
+
+
+
+|------------F1-----------|----Interfaz grafica---|----Funcionalidad----|
+|	   Login          |       finalizado      |      finalizado     |
+|          Stock          |       finalizado      |  finalizado     |
+|       Bienes de Uso     |       finalizado      |  finalizado     |
+|       Proveedores       |       finalizado      |  finalizado     |
+|       Cotizaciones	  |       finalizado      |  finalizado         |
+|       Solic. compra	  |       finalizado	  |	 finalizado     |
+|       Pedido Reaprov	  |       finalizado	  |	 finalizado     |
+|      Orden de compra    |       finalizado      |	 parcial        |
+|   Factura de proveedor  |           -           |	     -          |
+|   Informe de recepcion  |           -           |	     -          |
+|  Cuenta corriente prov  |           -           |	     -          |
+|  Pedido devolucion prov |           -           |	     -          |
+|  nota de credito prov   |           -           |	     -          |
+|   registracion compra   |           -           |	     -          |
+|       Clientes     	  |       finalizado 	  |	    JB          |
+|       Precios     	  |       finalizado 	  |	    JB          |
+|       Remito venta   	  |       finalizado 	  |	    JB          |
+|       Factura venta  	  |       finalizado 	  |	    JB          |
+|Pedido devolucion(ventas)|       finalizado 	  |	    JB          |
+|       Nota credito  	  |       finalizado 	  |	    JB          |
+|   Registracion(ventas)  |       finalizado 	  |	    JB          |
+| Confirmación de cobro   |       finalizado 	  |	    JB          |
+| Registracion(cobros)    |       finalizado 	  |	    JB          |
+| Orden de pago           |       finalizado 	  |	    JB          |
+|Cuenta bancaria empresa  |       finalizado 	  |	    JB          |
+|Registracion pago        |       finalizado 	  |	    JB          |
+=======
+(ahora a partir de la refactorizaciÃ³n violenta que comenzÃ³ la semana del 12/08 si no me equivoco)
+
+
+
+
+
+--->Otros trabajos realizados:
+
+|----------------------------------------------------------------------------------------------------|
+
+	Repaso de conocimientos de Andoroid nativo y actualizaciones de los mismos. Extraño Flutter.
+
+|----------------------------------------------------------------------------------------------------|
+
+--->Comentarios:
+
+|----------------------------------------------------------------------------------------------------|
+
+
+	Capa Usuario:
+
+		Compras :
+			Terminado Cotizaciones y con ello Control de Proveedores.
+			Iniciado Orden de Compras, falta la lógica del Insert, Delete y Emisión
+			de la orden.
+
+|----------------------------------------------------------------------------------------------------|
+
+		
+|----------------------------------------------------------------------------------------------------|
+

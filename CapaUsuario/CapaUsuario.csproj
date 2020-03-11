@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A944BDF9-4A0B-4937-938C-633042D9B0B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaUsuario</RootNamespace>
+    <AssemblyName>CapaUsuario</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_Money-Graph_379341.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\packages\GCDesign.1.0.0\lib\net46\GCDesign.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LollipoUi">
+      <HintPath>..\..\..\..\OneDrive\Escritorio\LollipoUi.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cobros\ExecuteQuery.cs" />
+    <Compile Include="Cobros\FrmConfirmacionCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cobros\FrmConfirmacionCobro.Designer.cs">
+      <DependentUpon>FrmConfirmacionCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cobros\FrmRegistracionMonetaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cobros\FrmRegistracionMonetaria.Designer.cs">
+      <DependentUpon>FrmRegistracionMonetaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Bancos\Bancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Bancos\Bancos.Designer.cs">
+      <DependentUpon>Bancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Bienes_de_uso\FrmBienUso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Bienes_de_uso\FrmBienUso.Designer.cs">
+      <DependentUpon>FrmBienUso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Cuenta_corriente\FrmCuentasCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Cuenta_corriente\FrmCuentasCorriente.Designer.cs">
+      <DependentUpon>FrmCuentasCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Factura_prov\FrmFacurasProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Factura_prov\FrmFacurasProv.Designer.cs">
+      <DependentUpon>FrmFacurasProv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Informe_recepcion\FrmInformeRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Informe_recepcion\FrmInformeRecepcion.Designer.cs">
+      <DependentUpon>FrmInformeRecepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Nota_credito\FrmNotaCreditoCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Nota_credito\FrmNotaCreditoCompras.Designer.cs">
+      <DependentUpon>FrmNotaCreditoCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Orden_de_Compra\FrmOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Orden_de_Compra\FrmOrdenDeCompra.Designer.cs">
+      <DependentUpon>FrmOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Pedidos_de_reaprovisionamiento\DetallePedidoReaprov.cs" />
+    <Compile Include="Compras\Pedidos_de_reaprovisionamiento\FrmModificarPedidoReaprov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Pedidos_de_reaprovisionamiento\FrmModificarPedidoReaprov.Designer.cs">
+      <DependentUpon>FrmModificarPedidoReaprov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Pedidos_de_reaprovisionamiento\FrmPedidosReaprov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Pedidos_de_reaprovisionamiento\FrmPedidosReaprov.Designer.cs">
+      <DependentUpon>FrmPedidosReaprov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Pedido_dev\FrmPedidoDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Pedido_dev\FrmPedidoDev.Designer.cs">
+      <DependentUpon>FrmPedidoDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Proveedores\FrmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Proveedores\FrmProveedores.Designer.cs">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Registracion\FrmRegistracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Registracion\FrmRegistracion.Designer.cs">
+      <DependentUpon>FrmRegistracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Solicitud_de_compra\DetalleSolicitud.cs" />
+    <Compile Include="Compras\Solicitud_de_compra\FrmModificarSolicitudCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Solicitud_de_compra\FrmModificarSolicitudCompra.Designer.cs">
+      <DependentUpon>FrmModificarSolicitudCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Solicitud_de_compra\SolicitudCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Solicitud_de_compra\SolicitudCompra.Designer.cs">
+      <DependentUpon>SolicitudCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Stock\FrmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Stock\FrmStock.Designer.cs">
+      <DependentUpon>FrmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Cotizaciones\FrmCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\Cotizaciones\FrmCotizaciones.Designer.cs">
+      <DependentUpon>FrmCotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\Cuenta_bancaria_empresa\FrmCuentaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\Cuenta_bancaria_empresa\FrmCuentaBancaria.Designer.cs">
+      <DependentUpon>FrmCuentaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\ExecuteQuery.cs" />
+    <Compile Include="Pagos\Orden_pago\FrmOrdenPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\Orden_pago\FrmOrdenPago.Designer.cs">
+      <DependentUpon>FrmOrdenPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\Registracion_debito\FrmRegistracionDebito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\Registracion_debito\FrmRegistracionDebito.Designer.cs">
+      <DependentUpon>FrmRegistracionDebito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexUtilities.cs" />
+    <Compile Include="sffffffff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sffffffff.Designer.cs">
+      <DependentUpon>sffffffff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sfffffffffff2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfffffffffff2.Designer.cs">
+      <DependentUpon>sfffffffffff2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sfgndfghd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfgndfghd.Designer.cs">
+      <DependentUpon>sfgndfghd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Clientes\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Clientes\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Clientes\FrmCuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Clientes\FrmCuentaCorriente.Designer.cs">
+      <DependentUpon>FrmCuentaCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Clientes\FrmListadoCuentasCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Clientes\FrmListadoCuentasCorriente.Designer.cs">
+      <DependentUpon>FrmListadoCuentasCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Devolucion\FrmPedidoDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Devolucion\FrmPedidoDevolucion.Designer.cs">
+      <DependentUpon>FrmPedidoDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Factura_venta\FrmFacturaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Factura_venta\FrmFacturaVenta.Designer.cs">
+      <DependentUpon>FrmFacturaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Nota_credito\FrmNotaCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Nota_credito\FrmNotaCredito.Designer.cs">
+      <DependentUpon>FrmNotaCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Pedido_de_venta\DetallePedidoVenta.cs" />
+    <Compile Include="Ventas\Pedido_de_venta\FrmPedidoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Pedido_de_venta\FrmPedidoVenta.Designer.cs">
+      <DependentUpon>FrmPedidoVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ExecuteQuery.cs" />
+    <Compile Include="Ventas\Precios\FrmListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Precios\FrmListaPrecios.Designer.cs">
+      <DependentUpon>FrmListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Registracion_monetaria\FrmRegistracionMonetaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Registracion_monetaria\FrmRegistracionMonetaria.Designer.cs">
+      <DependentUpon>FrmRegistracionMonetaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Remito_venta\FrmRemitoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Remito_venta\FrmRemitoVenta.Designer.cs">
+      <DependentUpon>FrmRemitoVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cobros\FrmConfirmacionCobro.resx">
+      <DependentUpon>FrmConfirmacionCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cobros\FrmRegistracionMonetaria.resx">
+      <DependentUpon>FrmRegistracionMonetaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Bancos\Bancos.resx">
+      <DependentUpon>Bancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Bienes_de_uso\FrmBienUso.resx">
+      <DependentUpon>FrmBienUso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Cuenta_corriente\FrmCuentasCorriente.resx">
+      <DependentUpon>FrmCuentasCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Factura_prov\FrmFacurasProv.resx">
+      <DependentUpon>FrmFacurasProv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Informe_recepcion\FrmInformeRecepcion.resx">
+      <DependentUpon>FrmInformeRecepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Nota_credito\FrmNotaCreditoCompras.resx">
+      <DependentUpon>FrmNotaCreditoCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Orden_de_Compra\FrmOrdenDeCompra.resx">
+      <DependentUpon>FrmOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Pedidos_de_reaprovisionamiento\FrmModificarPedidoReaprov.resx">
+      <DependentUpon>FrmModificarPedidoReaprov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Pedidos_de_reaprovisionamiento\FrmPedidosReaprov.resx">
+      <DependentUpon>FrmPedidosReaprov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Pedido_dev\FrmPedidoDev.resx">
+      <DependentUpon>FrmPedidoDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Proveedores\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Registracion\FrmRegistracion.resx">
+      <DependentUpon>FrmRegistracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Solicitud_de_compra\FrmModificarSolicitudCompra.resx">
+      <DependentUpon>FrmModificarSolicitudCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Solicitud_de_compra\SolicitudCompra.resx">
+      <DependentUpon>SolicitudCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Stock\FrmStock.resx">
+      <DependentUpon>FrmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Cotizaciones\FrmCotizaciones.resx">
+      <DependentUpon>FrmCotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\Cuenta_bancaria_empresa\FrmCuentaBancaria.resx">
+      <DependentUpon>FrmCuentaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\Orden_pago\FrmOrdenPago.resx">
+      <DependentUpon>FrmOrdenPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\Registracion_debito\FrmRegistracionDebito.resx">
+      <DependentUpon>FrmRegistracionDebito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sffffffff.resx">
+      <DependentUpon>sffffffff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfffffffffff2.resx">
+      <DependentUpon>sfffffffffff2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfgndfghd.resx">
+      <DependentUpon>sfgndfghd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Clientes\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Clientes\FrmCuentaCorriente.resx">
+      <DependentUpon>FrmCuentaCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Clientes\FrmListadoCuentasCorriente.resx">
+      <DependentUpon>FrmListadoCuentasCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Devolucion\FrmPedidoDevolucion.resx">
+      <DependentUpon>FrmPedidoDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Factura_venta\FrmFacturaVenta.resx">
+      <DependentUpon>FrmFacturaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Nota_credito\FrmNotaCredito.resx">
+      <DependentUpon>FrmNotaCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Pedido_de_venta\FrmPedidoVenta.resx">
+      <DependentUpon>FrmPedidoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Precios\FrmListaPrecios.resx">
+      <DependentUpon>FrmListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Registracion_monetaria\FrmRegistracionMonetaria.resx">
+      <DependentUpon>FrmRegistracionMonetaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Remito_venta\FrmRemitoVenta.resx">
+      <DependentUpon>FrmRemitoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bienes_de_uso128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedores128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cotizacion96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta_corriente64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facturas128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar naranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informe_recepcion100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota_credito_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orden-de-compra-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devoluciones128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedido_reaprov100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registracion64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remito100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solicitud_compra_100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_Money-Graph_379341.ico" />
+    <None Include="Resources\updated_proveedor64.png" />
+    <None Include="Resources\add_proveedor64.png" />
+    <None Include="Resources\add_solicitud_compra32.png" />
+    <None Include="Resources\add_solicitud_compra64.png" />
+    <None Include="Resources\stock_updated64.png" />
+    <None Include="Resources\add_stock64.png" />
+    <None Include="Resources\orden_64.png" />
+    <None Include="Resources\crear_registracion44.png" />
+    <None Include="Resources\crear_confirmacion_cobro44.png" />
+    <None Include="Resources\confirmacion_cobro64.png" />
+    <None Include="Resources\borrar_confirmacion_cobro44.png" />
+    <None Include="Resources\borrar_confirmacion_cobro32.png" />
+    <None Include="Resources\guardar_usuario64.png" />
+    <None Include="Resources\guardar_datos64.png" />
+    <None Include="Resources\info100.png" />
+    <None Include="Resources\sql_success1.png" />
+    <None Include="Resources\data_Inserted.png" />
+    <None Include="Resources\sql_error.png" />
+    <None Include="Resources\pedido_devolucion64.png" />
+    <None Include="Resources\factura_venta64.png" />
+    <None Include="Resources\undraw_logistics_x4dc.png" />
+    <None Include="Resources\agregarProducto32.png" />
+    <None Include="Resources\pedido_venta64.png" />
+    <None Include="Resources\borrar_precio32.png" />
+    <None Include="Resources\agregarPrecio64.png" />
+    <None Include="Resources\lista_precios64.png" />
+    <None Include="Resources\save_client32.png" />
+    <None Include="Resources\cool_save_light_32.png" />
+    <None Include="Resources\cuenta_corriente_2_64.png" />
+    <None Include="Resources\cuenta_corriente641.png" />
+    <None Include="Resources\cliente2_64.png" />
+    <None Include="Resources\delete_client32.png" />
+    <None Include="Resources\edit_client32.png" />
+    <None Include="Resources\edit_client64.png" />
+    <None Include="Resources\add_client64.png" />
+    <None Include="Resources\control_cliente_64.png" />
+    <None Include="Resources\cliente64.png" />
+    <None Include="Resources\clientes2_128.png" />
+    <None Include="Resources\clientes128.png" />
+    <None Include="Resources\automatizados80.png" />
+    <None Include="Resources\borrar todo48x48.png" />
+    <None Include="Resources\delete row 32x32.png" />
+    <None Include="Resources\cool_close32.png" />
+    <None Include="Resources\cool_save_32.png" />
+    <None Include="Resources\add_light_green_32.png" />
+    <None Include="Resources\compras_green48.png" />
+    <None Include="Resources\pagos48.png" />
+    <None Include="Resources\ventas64.png" />
+    <None Include="Resources\producto64.png" />
+    <None Include="Resources\exit64.png" />
+    <None Include="Resources\compras64.png" />
+    <None Include="Resources\aceptar.png" />
+    <None Include="Resources\save3.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save2.png" />
+    <None Include="Resources\cool_save.png" />
+    <None Include="Resources\editWhite32.png" />
+    <None Include="Resources\cool_seach32.png" />
+    <None Include="Resources\cancel2.png" />
+    <None Include="Resources\Borrar2.png" />
+    <None Include="Resources\Nuevo.png" />
+    <None Include="Resources\last.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\previous1.png" />
+    <None Include="Resources\first.png" />
+    <None Include="Resources\editBlue32.png" />
+    <None Include="Resources\smoothexit.png" />
+    <None Include="Resources\cobros64.png" />
+    <None Include="Resources\pagos64.png" />
+    <None Include="Resources\if_Money_206469.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{D41ADDE8-F9FA-425B-BAD7-C93EE070CBBC}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatosCobros\DatosCobros.fsproj">
+      <Project>{7a076b0b-aa6d-4e5b-974b-2b47bf59805e}</Project>
+      <Name>DatosCobros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatosPagos\DatosPagos.fsproj">
+      <Project>{e979f97c-a74a-4d9e-b014-29eb76c4c434}</Project>
+      <Name>DatosPagos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatosVentas\DatosVentas.fsproj">
+      <Project>{dba86784-7e54-4900-9f9c-03abaf852357}</Project>
+      <Name>DatosVentas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Templates\Templates.fsproj">
+      <Project>{b2f8d34b-46ad-42a3-a58a-f1d270a8be82}</Project>
+      <Name>Templates</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

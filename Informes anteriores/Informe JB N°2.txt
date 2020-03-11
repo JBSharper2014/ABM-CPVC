@@ -1,0 +1,10 @@
+00:54 del 11 del 9 de 2019
+
+1- Mejore las flases F#
+2- Quité el boton para borra cuentas corrientes de clientes porque estas se van a dar de bajas cuando se borren clientes directamente.
+3- Borrar toda pestaña de listado de precios, ya que a) Como el campo ya existe todos son consultas de actualizacion 
+						     b) Los precios no pueden borrarse
+						     c) Todas las funcionalidades pueden ser reaizadas desde las pestaña de administracion
+4-Supongo que Lista de precios está terminado
+5- Me falta un par de consultas y termino con clientes.
+
